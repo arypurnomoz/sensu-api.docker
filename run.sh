@@ -1,5 +1,10 @@
 #!/bin/sh
 
+if [ -z "$RABBITMQ_HOST" ]; then
+  echo "\$RABBITMQ_HOST must be provided" 
+  exit 1
+fi
+
 if [ -z "$REDIS_HOST" ]; then
   echo "\$REDIS_HOST must be provided" 
   exit 1
