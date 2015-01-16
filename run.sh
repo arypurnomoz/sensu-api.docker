@@ -40,4 +40,4 @@ EOF
 echo "Running sensu config:"
 cat /etc/sensu/config.json
 
-exec /opt/sensu/bin/sensu-api -vc /etc/sensu/config.json
+exec /opt/sensu/bin/sensu-api -vc /etc/sensu/config.json -d /conf.d
